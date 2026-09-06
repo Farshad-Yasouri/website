@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mySite</title>
+    <link rel="stylesheet" href="/assets/css/main-index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="menu">
+            <h2>حسابان</h2>
+
+            <a href="">معرفی</a>
+            <a href="">ارتباط با من</a>
+            <a href="">ورود</a>
+            <a href="">ثبت‌نام</a>
+        </div>
+        <div class="intro">
+            <h1>
+                وبگاهی برای ارائه تدریسهای <span> ریاضیات دبیرستانی</span>
+            </h1>
+            <h2>
+                جهت دسترسی به مطالب آموزشی ثبت نام کنید
+                ثبت نام رایگان و نامحدود است
+            </h2>
+        </div>
+        <div>
+            <div class="login">
+                <form method="post" action="/pages/login.php">
+                    <!-- اطلاعات داخل این خط به برنامه میگوید 
+                     با روش پست اطلاعان ورودی در فیلدها را به فایل 
+                     معرفی شده بفرست با زدن ذکنه.-->
+                    <h2>ورود</h2>
+                    <input type="text" name="email" placeholder="ایمیل" />
+                    <input type="password" name="password" placeholder="رمز عبور" />
+                    <p> <a href="/pages/forgot-password.html"  style="text-decoration: none;">    
+                        رمز خود را فراموش کزده اید؟
+                    </a>
+                    </p>
+                    <button><span> ورود </span></button>
+                </form>
+            </div>
+            <div class="register">
+                <form method="post" action="/pages/register.php">
+                    <h2>ثبت نام</h2>
+                    <input type="text" name="name" placeholder="نام" />
+                    <input type="email" name="email" placeholder="ایمیل" />
+                    <input type="tel" name="phone" placeholder="تلفن" />
+                    <input type="password" name="password" placeholder="رمز عبور" />
+                    <input type="text" name="studyfield" placeholder="رشنه تحصیلی نجربی ، ریاضی، انسانی" />
+                    <input type="text" name="studyclass" placeholder="پایه تحصیلی 10،11،12" />
+                    <button><span> ثبت نام</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
