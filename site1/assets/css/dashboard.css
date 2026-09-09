@@ -1,1 +1,118 @@
+body {
+      background: #f4f6f9;
+      font-family: Tahoma, Arial, sans-serif;
+    }
 
+    .dashboard {
+      max-width: 1100px;
+      margin: 50px auto;
+    }
+
+    .panel-card {
+      border: none;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .panel-title {
+      background: linear-gradient(135deg, #0d6efd, #084298);
+      color: white;
+      padding: 25px;
+    }
+
+    .access-menu {
+      background: #ffffff;
+      min-height: 480px;
+      padding: 20px;
+    }
+
+    .access-menu h5 {
+      color: #333;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .access-item {
+      display: block;
+      width: 100%;
+      border: none;
+      background: transparent;
+      text-align: right;
+      padding: 14px 16px;
+      margin-bottom: 8px;
+      border-radius: 10px;
+      color: #555;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    .access-item:hover {
+      background: #eaf2ff;
+      color: #0d6efd;
+    }
+
+    .access-item.active {
+      background: #0d6efd;
+      color: white;
+    }
+
+    .content-area {
+      background: #ffffff;
+      min-height: 480px;
+      padding: 30px;
+      border-right: 1px solid #eeeeee;
+    }
+
+    .content-box {
+      display: none;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .content-box.active {
+      display: block;
+    }
+
+    .content-box h4 {
+      color: #0d6efd;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    .form-control {
+      padding: 12px;
+      border-radius: 9px;
+    }
+
+    .form-label {
+      font-weight: bold;
+      color: #444;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .dashboard {
+        margin: 20px 12px;
+      }
+
+      .access-menu {
+        min-height: auto;
+      }
+
+      .content-area {
+        border-right: none;
+        border-top: 1px solid #eeeeee;
+      }
+    }

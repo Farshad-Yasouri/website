@@ -1,0 +1,75 @@
+ * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: white;
+            font-family: sans-serif;
+            font-weight: normal;
+        }
+  .mathbooklet {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: sans-serif;
+    direction: rtl;
+    font-size: 14px;
+}
+
+.mathbooklet h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.mathbooklet details {
+    margin: 3px 0;
+}
+
+.mathbooklet summary {
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid #222;
+    border-radius: 3px;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-left: 18px;
+}
+
+.mathbooklet summary::-webkit-details-marker {
+    display: none;
+}
+
+.mathbooklet summary::before {
+    content: "+";
+    position: absolute;
+    left: 7px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.mathbooklet details[open] summary::before {
+    content: "−";
+}
+
+.mathbooklet details ul {
+    list-style: none;
+    padding: 0;
+    margin: 3px 0 0;
+}
+
+.mathbooklet details li {
+    height: 35px;
+    line-height: 20px;
+    border: 1px solid #b22;
+    border-radius: 3px;
+    margin: 3px 0;
+}
+
+.mathbooklet details a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+}
+

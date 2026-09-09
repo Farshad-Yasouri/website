@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: "Vazirmatn", Tahoma, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eaf4ff, #f8fbff);
+    color: #1e293b;
+}
+
+/* دایو اصلی */
+body > div {
+    width: 95%;
+    max-width: 1100px;
+    min-height: 90vh;
+    margin: 25px auto;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(30, 64, 175, 0.14);
+}
+
+/* منو */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 30px;
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    color: white;
+}
+
+.menu h2 {
+    color: white;
+    font-size: 22px;
+}
+
+.menu a {
+    margin: 0 12px;
+    color: #e0ecff;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ffd43b;
+}
+
+/* بخش معرفی */
+.intro {
+    text-align: center;
+    padding: 65px 20px 35px;
+}
+
+.intro h1 {
+    color: #1e3a8a;
+    font-size: 27px;
+    line-height: 1.8;
+}
+
+.intro h1 span {
+    color: #2563eb;
+}
+
+.intro h2 {
+    margin-top: 12px;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* دایوی که کارت‌ها داخل آن هستند */
+.intro + div {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    width: 100%;
+    margin: 30px auto 60px;
+}
+
+/* کارت ورود و ثبت‌نام */
+.login,
+.register {
+    position: relative;
+    width: 280px;
+    min-height: 210px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(30, 64, 175, 0.15);
+    transition: 0.3s ease;
+}
+
+/* کارت ورود */
+.login {
+    background: linear-gradient(145deg, #dbeafe, #eff6ff);
+    border: 1px solid #bfdbfe;
+}
+
+/* کارت ثبت‌نام */
+.register {
+    background: linear-gradient(145deg, #fef3c7, #fff7ed);
+    border: 1px solid #fde68a;
+}
+
+.login:hover,
+.register:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 30px rgba(30, 64, 175, 0.22);
+}
+
+/* عنوان کارت‌ها */
+.login h3,
+.register h3 {
+    margin-bottom: 18px;
+    color: #1e3a8a;
+    font-size: 20px;
+}
+
+/* ورودی‌ها */
+.login input,
+.register input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 9px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.login input:focus,
+.register input:focus {
+    border-color: #2563eb;
+}
+
+/* دکمه‌ها */
+.login button,
+.register button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login button:hover,
+.register button:hover {
+    background: #1d4ed8;
+}
+
+/* نمایش در موبایل */
+@media (max-width: 700px) {
+    .menu {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menu a {
+        margin: 0 5px;
+        font-size: 12px;
+    }
+
+    .intro h1 {
+        font-size: 22px;
+    }
+
+    .intro + div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login,
+    .register {
+        width: 85%;
+        max-width: 300px;
+    }
+}

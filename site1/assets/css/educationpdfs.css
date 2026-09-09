@@ -1,0 +1,100 @@
+ * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: white;
+            font-family: Tahoma, Arial, sans-serif;
+            font-weight: normal;
+        }
+
+        .mathbooklet {
+            width: 470px;
+            max-width: 95%;
+            margin: 8px auto;
+            text-align: center;
+            direction: rtl;
+            font-size: 15px;
+            font-weight: normal;
+        }
+
+        .mathbooklet h1 {
+            font-size: 20px;
+            font-weight: normal;
+            margin: 12px 0;
+        }
+
+        .mathbooklet details {
+            margin: 4px 0;
+        }
+
+       .mathbooklet summary {
+            height: 47px;
+            line-height: 41px;
+            border: 3px solid #0876d1;
+            border-radius: 9px;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding: 0 35px;
+            color: #222;
+            font-weight: normal;
+        }
+
+        .mathbooklet summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .mathbooklet summary::before {
+            content: "+";
+            position: absolute;
+            left: 12px;
+            font-size: 23px;
+            line-height: 39px;
+            font-weight: normal;
+        }
+
+        .mathbooklet details[open] > summary::before {
+            content: "−";
+        }
+
+        /* عنوان فصل */
+        .mathbooklet .Chapter > summary {
+            border-color: #111;
+            font-size: 16px;
+        }
+
+        /* عنوان درس */
+       .mathbooklet .lesson {
+            margin: 4px 10px;
+        }
+
+        .mathbooklet .lesson > summary {
+            border-color: #0876d1;
+        }
+
+        /* کادر قسمت‌ها */
+        .mathbooklet ul {
+            list-style: none;
+            padding: 5px 10px;
+            margin: 5px 10px;
+            border: 3px solid #b3263c;
+            border-radius: 9px;
+        }
+
+        .mathbooklet li {
+            height: 27px;
+            line-height: 27px;
+            margin: 1px 0;
+        }
+
+        .mathbooklet a {
+            color: #333;
+            text-decoration:none;
+            font-weight: normal;
+        }
+
+        .mathbooklet a:hover {
+            color: #b3263c;
+        }
